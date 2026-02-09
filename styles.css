@@ -69,3 +69,45 @@ body {
 .nav a:hover {
     background: rgba(255, 255, 255, 0.2);
 }
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 12px;
+    padding: 16px;
+    cursor: pointer;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.card:focus {
+    outline: 3px solid #4b2e83;
+    outline-offset: 3px;
+}
+
+.meta {
+    color: #666;
+    font-size: 14px;
+}
+
+.hidden {
+    display: none;
+}
+
+.more {
+    margin-top: 10px;
+    background: #f6f2ff;
+    border-radius: 10px;
+    padding: 10px;
+}
